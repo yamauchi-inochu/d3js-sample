@@ -3,7 +3,7 @@
     <meta charset="utf8">
     <title></title>
     <meta charset="UTF-8">
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <style>
     svg{width:700px; height:700px; border:1px; background-color: white; text-align: left;}
     path{fill:white; stroke:black; stroke-width:0.25;}
@@ -43,7 +43,7 @@
             }
             return "#CEF6CE";
           })
-          .on('click', function(event,d){
+          .on('click', function(d){
             alert(d.properties.MOJI+"の人口は"+d.properties.JINKO+"人です。")
         })
         .on('mouseover', function(){
